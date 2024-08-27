@@ -5,7 +5,9 @@ import React from 'react'
 
 export const arttir=()=>({type:"ARTTIR", payload1:"ARTTIRILDI"})
 
+export const azalt=()=>({type:"AZALT"})
 
+export const sifirla=()=>({type:"SIFIRLA", payload1:"SIFIRLANDI"})
 
 
 // const counterReducer = (state={sayac:0,text1:""},action1) => {

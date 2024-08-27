@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import "./Counter.css";
-import { arttir } from "../../redux/reducers/counterReducer";
+import { arttir, azalt, sifirla } from "../../redux/reducers/counterReducer";
 
 const Counter = () => {
 
@@ -20,19 +20,25 @@ const dispatch1=useDispatch()
       <div>
         <button
           className="counter-button positive"
-     onClick={()=> dispatch1(arttir())}
+          onClick={() => dispatch1(arttir())}
         >
           ARTTIR
         </button>
 
-        <button className='counter-button zero'
-
-        // sıfırla fonksiyonu
->RESET</button>
-<button className='counter-button negative'
-
-// azalt fonksiyonu
->AZALT</button>
+        <button
+          className="counter-button zero"
+          onClick={() => dispatch1(sifirla())}
+          // sıfırla fonksiyonu
+        >
+          RESET
+        </button>
+        <button
+          className="counter-button negative"
+          onClick={() => dispatch1(azalt())}
+          // azalt fonksiyonu
+        >
+          AZALT
+        </button>
       </div>
     </div>
   );
